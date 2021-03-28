@@ -29,7 +29,7 @@ namespace Hoi4ModTranslate2
 
 
             
-            Console.WriteLine("Нажми кнопку");
+            Console.WriteLine("Для продолжения нажмите любую кнопку");
             Console.ReadKey(true);
             fileName.Clear();
             foreach (FileInfo file in dir.GetFiles())
@@ -39,7 +39,7 @@ namespace Hoi4ModTranslate2
 
             recordingFromTranslatedFilesToFinal(fileName);
 
-            Console.WriteLine("Ценок");
+            Console.WriteLine("Конец");
             Console.ReadKey(true);
         }
 
