@@ -27,7 +27,11 @@ namespace Hoi4ModTranslate2
 
             pullStringsFromFile(fileName);
 
-
+            if (fileName.Count()==0) {
+                Console.WriteLine("Ошибка в папке data нет файлов");
+                Console.ReadKey(true);
+                return;
+            }
             
             Console.WriteLine("Для продолжения нажмите любую кнопку");
             Console.ReadKey(true);
